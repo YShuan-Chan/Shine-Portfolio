@@ -2,7 +2,7 @@
   "name": "my_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://YShuan-Chan.github.io/Shine",
+  "homepage": "https://yshuan-chan.github.io/Shine-Portfolio/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
