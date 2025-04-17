@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Shine/static/css/main.dbf0cb16.css",
+    "main.js": "/Shine/static/js/main.aa0e4da7.js",
+    "static/js/453.195b869a.chunk.js": "/Shine/static/js/453.195b869a.chunk.js",
+    "static/media/profile-image.jpg": "/Shine/static/media/profile-image.53262a590c6c516bad17.jpg",
+    "index.html": "/Shine/index.html",
+    "main.dbf0cb16.css.map": "/Shine/static/css/main.dbf0cb16.css.map",
+    "main.aa0e4da7.js.map": "/Shine/static/js/main.aa0e4da7.js.map",
+    "453.195b869a.chunk.js.map": "/Shine/static/js/453.195b869a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbf0cb16.css",
+    "static/js/main.aa0e4da7.js"
+  ]
+}
