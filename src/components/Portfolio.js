@@ -5,12 +5,20 @@ import profileImage from '../assets/profile-image.jpg';
 function Portfolio() {
     return (
         <div className="portfolio">
+            <nav className="navbar">
+                <ul className="nav-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects" className="coming-soon">Projects</a></li>
+                </ul>
+            </nav>
+            
             <section className="portfolio-header">
                 <h1>Shine's Portfolio</h1>
             </section>
             
             <div className="portfolio-content">
-                <div className="portfolio-left">
+                <div id="profile" className="portfolio-left">
                     <div className="profile-image-container">
                         <img src={profileImage} alt="Shine Chan" className="profile-image" />
                     </div>
@@ -31,7 +39,7 @@ function Portfolio() {
                         <a href="https://github.com/YShuan-Chan" className="social-link github" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github"></i>
                         </a>
-                        <a href="https://drive.google.com/file/d/1CXa-7AviAmcJo4Max5xyE6yOO9m54Y5P/view?usp=sharing" className="resume-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1_EciWily6DGOpSDpM6XDE1_akSxAm8Xk/view?usp=sharing" className="resume-link" target="_blank" rel="noopener noreferrer">
                             <i className="fas fa-file-alt"></i> Resume
                         </a>
                     </div>
