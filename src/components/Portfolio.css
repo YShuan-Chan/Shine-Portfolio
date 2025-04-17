@@ -1,0 +1,265 @@
+:root {
+    --background-color: #1e1e1e;
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+/* Shine Portfolio */
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    padding: 0;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    position: relative;
+    margin-top: 5%;
+    padding: 0 3% 0 5%;
+}
+
+/* Profile image */
+.profile-image-container {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgba(249, 245, 246, 0.94);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image {
+    width: 95%;
+    height: 110%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+/* SE, SDE */
+.profile-job-title {
+    font-size: 20px;
+    color: #ccc;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+/* Skills */
+.profile-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.skill-tag {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.skill-tag.java {
+    background-color: #f89820;
+}
+
+.skill-tag.python {
+    background-color: #2271b3;
+}
+
+.skill-tag.js {
+    background-color: #f0db4f;
+    color: #323330;
+}
+
+.skill-tag.webdev {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+.skill-tag.ai {
+    background-color: #8e44ad;
+}
+
+/* Social Links */
+.profile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 34px;
+}
+
+.resume-link {
+    width: auto;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    border: 2px solid #dbdbdb;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.resume-link i {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.social-link:hover, .resume-link:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Right Side Sections */
+.portfolio-right {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+    padding: 0 5% 0 0;
+    margin-top: -15px;
+}
+
+.section-education, .section-experience {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.section-education::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #818181d9;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-bottom: 5px;
+}
+
+.right-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-align: left;
+    margin-left: 15%;
+}
+
+/* Items */
+.education-item, .experience-item {
+    display: flex;
+    margin-bottom: 14px;
+    align-items: center;
+    text-align: left;
+}
+
+.detail-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 15%;
+    width: 40px;
+}
+
+.item-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.item-content h3 {
+    font-size: 18px;
+    margin: 0 0 0 0;
+    text-align: left;
+}
+
+.item-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .portfolio-left, .portfolio-right {
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    .profile-image-container {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+}
