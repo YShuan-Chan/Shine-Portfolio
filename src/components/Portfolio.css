@@ -285,9 +285,16 @@
 }
 
 @media (max-width: 768px) {
+    .portfolio {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     .portfolio-content {
         flex-direction: column;
         padding: 0 20px;
+        width: 100%;
+        max-width: 100%;
     }
     
     .portfolio-left, .portfolio-right {
@@ -308,10 +315,89 @@
     .nav-links {
         flex-wrap: wrap;
         gap: 10px;
+        margin-left: 20px;
     }
     
     .nav-links li a {
         font-size: 14px;
         padding: 3px 8px;
+    }
+    
+    .profile-skills {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+    
+    .skill-tag {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    
+    .right-section-title {
+        margin-left: 5%;
+    }
+    
+    .detail-icon {
+        padding-left: 5%;
+    }
+    
+    .portfolio-header h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .nav-links {
+        margin-left: 10px;
+        gap: 8px;
+    }
+    
+    .nav-links li a {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+    
+    .profile-name {
+        font-size: 24px;
+    }
+    
+    .profile-job-title {
+        font-size: 16px;
+    }
+    
+    .right-section-title {
+        font-size: 20px;
+    }
+    
+    .item-content h3 {
+        font-size: 16px;
+    }
+    
+    .item-subtitle {
+        font-size: 14px;
+    }
+    
+    .profile-links {
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 30px;
+        height: 30px;
+        font-size: 28px;
+    }
+    
+    .resume-link {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    
+    .resume-link i {
+        font-size: 16px;
     }
 }

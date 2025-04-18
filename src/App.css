@@ -3,6 +3,8 @@
   min-height: 100vh;
   background-color: #1e1e1e;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden; /* 防止水平滾動 */
 }
 
 .App-logo {
@@ -42,6 +44,7 @@
 
 @media (max-width: 768px) {
   .App {
-    padding: 1rem 0;
+    padding: 0; /* 確保在移動設備上沒有 padding */
+    width: 100%;
   }
 }
