@@ -4,7 +4,7 @@
   background-color: #1e1e1e;
   padding: 0;
   max-width: 100%;
-  overflow-x: hidden; /* 防止水平滾動 */
+  overflow-x: hidden; 
 }
 
 .App-logo {
@@ -44,7 +44,7 @@
 
 @media (max-width: 768px) {
   .App {
-    padding: 0; /* 確保在移動設備上沒有 padding */
+    padding: 0; 
     width: 100%;
   }
 }
