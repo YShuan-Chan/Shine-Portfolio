@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://yshuan-chan.github.io/Shine-Portfolio/static/css/main.45275f4c.css",
+    "main.css": "https://yshuan-chan.github.io/Shine-Portfolio/static/css/main.9a89ff26.css",
     "main.js": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/main.56352109.js",
     "static/js/453.195b869a.chunk.js": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/453.195b869a.chunk.js",
     "static/media/profile-image.jpg": "https://yshuan-chan.github.io/Shine-Portfolio/static/media/profile-image.53262a590c6c516bad17.jpg",
     "index.html": "https://yshuan-chan.github.io/Shine-Portfolio/index.html",
-    "main.45275f4c.css.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/css/main.45275f4c.css.map",
+    "main.9a89ff26.css.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/css/main.9a89ff26.css.map",
     "main.56352109.js.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/main.56352109.js.map",
     "453.195b869a.chunk.js.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45275f4c.css",
+    "static/css/main.9a89ff26.css",
     "static/js/main.56352109.js"
   ]
 }
