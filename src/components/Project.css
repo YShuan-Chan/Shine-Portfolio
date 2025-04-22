@@ -1,0 +1,302 @@
+.project-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+    background-color: var(--background-color);
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}
+
+.project-header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Projects list */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+/* Project showcase */
+.project-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Image carousel */
+.image-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.project-image-wrapper {
+    min-width: 100%;
+    flex: 0 0 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.project-full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0px;
+}
+
+/* Scroll buttons */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+    font-size: 18px;
+}
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+.scroll-button.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Project info */
+.project-info {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-with-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-full-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px 0px 0;
+    text-align: center;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-icon-link {
+    color: #8d8d8d;
+    font-size: 22px;
+    transition: color 0.2s;
+}
+
+.project-icon-link:hover {
+    color: #ffffff;
+}
+
+.project-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0 10px 10px 10px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.skill-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Description area */
+.project-description-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.project-description {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 5px;
+    position: relative;
+}
+
+.project-description::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(42, 42, 42, 0), rgba(42, 42, 42, 1));
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-description.expanded {
+    max-height: 500px;
+}
+
+.project-description.expanded::after {
+    opacity: 0;
+}
+
+.project-description p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.toggle-description {
+    background: none;
+    border: none;
+    color: #8d8d8d;
+    cursor: pointer;
+    padding: 3px 8px;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.toggle-description:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .project-showcase {
+        padding: 15px;
+    }
+    
+    .project-full-title {
+        font-size: 20px;
+    }
+    
+    .skill-item {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+    
+    .project-description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-button {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    .project-full-title {
+        font-size: 18px;
+    }
+    
+    .projects-list {
+        gap: 30px;
+    }
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(251, 250, 250, 0.6);
+    color: var(--background-color);
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+}

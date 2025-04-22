@@ -9,7 +9,7 @@ function Portfolio() {
                 <ul className="nav-links">
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects" className="coming-soon">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
             
