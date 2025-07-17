@@ -7,25 +7,25 @@ function Portfolio() {
         <div className="portfolio">
             <nav className="navbar">
                 <ul className="nav-links">
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#profile">Profiles</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
             
-            <section className="portfolio-header">
+            <section id="profile" className="portfolio-header">
                 <h1>Shine's Portfolio</h1>
             </section>
             
             <div className="portfolio-content">
-                <div id="profile" className="portfolio-left">
+                <div  className="portfolio-left">
                     <div className="profile-image-container">
                         <img src={profileImage} alt="Shine Chan" className="profile-image" />
                     </div>
                     <h1 className="profile-name">Yun-Hsuan(Shine) Chan</h1>
-                    <p className="profile-job-title">Software Engineer / SDE</p>
+                    <p className="profile-job-title">Full-Stack Developer</p>
                     <div className="profile-skills">
-                        <span className="skill-tag java">C++</span>
+                        <span className="skill-tag java">Java</span>
                         <span className="skill-tag python">Python</span>
                         <span className="skill-tag js">JS/React</span>
                         <span className="skill-tag webdev">Web/Andriod Dev</span>
@@ -65,7 +65,7 @@ function Portfolio() {
                             </div>
                             <div className="item-content">
                                 <h3>GPA</h3>
-                                <p className="item-subtitle">3.85 / 4.0</p>
+                                <p className="item-subtitle">3.86 / 4.0</p>
                             </div>
                         </div>
                         

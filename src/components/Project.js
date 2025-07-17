@@ -4,6 +4,11 @@ import travelLogin from '../assets/Travel_Plan/Log_in.png';
 import travelRecommend from '../assets/Travel_Plan/Recommand.png';
 import travelSchedule from '../assets/Travel_Plan/Schedule.png';
 
+import todayHighlight from '../assets/Android_Plan_Manager/TodayHighlight.png';
+import schedule from '../assets/Android_Plan_Manager/Schedule.png';
+import addNewEvent from '../assets/Android_Plan_Manager/AddNewEvent.png';
+import shareToOther from '../assets/Android_Plan_Manager/ShareToOther.png';
+
 // Project data
 const projectsData = [
     {
@@ -19,14 +24,37 @@ const projectsData = [
         github_link: "https://github.com/YShuan-Chan/Travel_Plan",
         youtube_link: "https://youtu.be/jGFa8O6RdJY?si=bOaaDbBDB6UekuJa"
     },
+    {
+        id: 2,
+        title: "Planen: Plan Manager",
+        images: [
+            todayHighlight,
+            schedule,
+            addNewEvent,
+            shareToOther
+        ],
+        description: "The plan manager is a comprehensive task management Android app featuring three task types (Todo, Deadline, Schedule) with dynamic progress tracking. Includes Google Sign-in, local database storage, US holiday integration via Nager API, Today's highlights, swipe-to-delete functionality, and social sharing capabilities.",
+        tech: "Kotlin, Android Jetpack, Retrofit, Moshi",
+    },
+    // {
+    //     id: 3,
+    //     title: "Course Management API Develpoment",
+    //     images: [
+    //         todayHighlight,
+    //         schedule,
+    //         addNewEvent,
+    //         shareToOther
+    //     ],
+    //     description: "",
+    //     tech: "MySQL, Docker, Node.js/Express, Google Cloud",
+    // },
 ];
 
 function Project() {
-    // Use an array to track active image for each project
+
     const [activeImages, setActiveImages] = useState(projectsData.map(() => 0));
-    // Track expanded state for each project description
+
     const [expandedDescriptions, setExpandedDescriptions] = useState(projectsData.map(() => false));
-    // State to control back-to-top button visibility
     const [showScrollTop, setShowScrollTop] = useState(false);
     
     // Control visibility of back-to-top button based on scroll position
@@ -68,14 +96,13 @@ function Project() {
         }
     };
     
-    // Toggle description expanded state for a specific project
+
     const toggleDescription = (projectIndex) => {
         const newExpandedDescriptions = [...expandedDescriptions];
         newExpandedDescriptions[projectIndex] = !newExpandedDescriptions[projectIndex];
         setExpandedDescriptions(newExpandedDescriptions);
     };
     
-    // Render skill tags
     const renderSkills = (techString) => {
         return techString.split(',').map((skill, index) => (
             <span key={index} className="skill-item">
