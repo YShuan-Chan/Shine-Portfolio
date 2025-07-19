@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://yshuan-chan.github.io/Shine-Portfolio/static/css/main.1d8123f1.css",
-    "main.js": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/main.cdec2e01.js",
+    "main.js": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/main.1df86ffb.js",
     "static/js/453.195b869a.chunk.js": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/453.195b869a.chunk.js",
     "static/media/profile-image.jpg": "https://yshuan-chan.github.io/Shine-Portfolio/static/media/profile-image.53262a590c6c516bad17.jpg",
     "static/media/Recommand.png": "https://yshuan-chan.github.io/Shine-Portfolio/static/media/Recommand.5cb0089ee7132225419d.png",
@@ -12,11 +12,11 @@
     "static/media/AddNewEvent.png": "https://yshuan-chan.github.io/Shine-Portfolio/static/media/AddNewEvent.90749bc3fe391f1c81b0.png",
     "index.html": "https://yshuan-chan.github.io/Shine-Portfolio/index.html",
     "main.1d8123f1.css.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/css/main.1d8123f1.css.map",
-    "main.cdec2e01.js.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/main.cdec2e01.js.map",
+    "main.1df86ffb.js.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/main.1df86ffb.js.map",
     "453.195b869a.chunk.js.map": "https://yshuan-chan.github.io/Shine-Portfolio/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d8123f1.css",
-    "static/js/main.cdec2e01.js"
+    "static/js/main.1df86ffb.js"
   ]
 }
